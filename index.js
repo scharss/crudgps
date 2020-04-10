@@ -35,8 +35,8 @@ function showPosition(position) {
     //****************************************** */
 
     document.getElementById("form").addEventListener("submit", (e) => {
-        var task = lat;
-        var description = long;
+        var task = lat.toFixed(20);
+        var description = long.toFixed(20);
         e.preventDefault();
         createTask(task, description);
         form.reset();
